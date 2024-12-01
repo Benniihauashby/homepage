@@ -7,6 +7,28 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Responsive top padding to prevent navbar overlap */
+        body {
+            padding-top: 56px;
+            /* Default padding */
+        }
+
+        /* Adjust padding for different screen sizes */
+        @media (min-width: 992px) {
+            body {
+                padding-top: 70px;
+                /* Larger padding for larger screens */
+            }
+        }
+
+        @media (max-width: 991px) {
+            body {
+                padding-top: 56px;
+                /* Smaller padding for mobile */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +42,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#interests">Interests</a>
                         </li>
@@ -34,10 +56,12 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://www.google.com" target="_blank" rel="noopener noreferrer">google</a>
+                            <a class="nav-link" href="http://www.google.com" target="_blank"
+                                rel="noopener noreferrer">google</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://www.oasis-ai.org" target="_blank" rel="noopener noreferrer">minecraft ai</a>
+                            <a class="nav-link" href="http://www.oasis-ai.org" target="_blank"
+                                rel="noopener noreferrer">minecraft ai</a>
                         </li>
                     </ul>
                 </div>
@@ -46,59 +70,68 @@
 
     <div class="container">
 
-    <h1>Welcome to Bens Blog</h1>
+        <h1>Welcome to Bens Blog</h1>
 
-    <a href="#bottom">TODO: Replace with button - Scroll to Bottom</a>
+        <a href="#bottom">TODO: Replace with button - Scroll to Bottom</a>
 
 
-    <div class="spinner-border text-warning" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-info" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="./images/ai_minecraft.jpg" class="card-img-top" alt="ai photo of minecraft">
-        <div class="card-body">
-            <h5 class="card-title">AI minecraft</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="blog.html" class="btn btn-primary">Go to blog</a>
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
         </div>
-    </div>
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./images/ai_minecraft.jpg" class="card-img-top" alt="ai photo of minecraft">
+            <div class="card-body">
+                <h5 class="card-title">AI minecraft</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="blog.html" class="btn btn-primary">Go to blog</a>
+            </div>
+        </div>
 
-    <div id="interests">
-        <h1>Interests</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo? Laboriosam
-            quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus
-            maxime delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus numquam
-            quod fuga?</p>
+        <div id="interests">
+            <h1>Interests</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo?
+                Laboriosam
+                quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus
+                maxime delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus
+                numquam
+                quod fuga?</p>
 
-    </div>
-    <div id="hobbies">
-        <h1>Hobbies</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo? Laboriosam
-            quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus
-            maxime delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus numquam
-            quod fuga?</p>
-    </div>
-    <div id="projects">
-        <h1>Projects</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo? Laboriosam
-            quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus
-            maxime delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus numquam
-            quod fuga?</p>
-    </div>
-    <div id="contact">
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo? Laboriosam
-            quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus
-            maxime delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus numquam
-            quod fuga?</p>
+        </div>
+        <div id="hobbies">
+            <h1>Hobbies</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo?
+                Laboriosam
+                quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus
+                maxime delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus
+                numquam
+                quod fuga?</p>
+        </div>
+        <div id="projects">
+            <h1>Projects</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo?
+                Laboriosam
+                quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus
+                maxime delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus
+                numquam
+                quod fuga?</p>
+        </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo?
+                Laboriosam
+                quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus
+                maxime delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus
+                numquam
+                quod fuga?</p>
 
-    
-    </div>
-    <div id="Bottom">Bottom</div>
+
+        </div>
+        <div id="Bottom">Bottom</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
